@@ -1,0 +1,19 @@
+<div *ngIf="cliente" class="div-prueba"><article class="article-saldo">
+<p class="parrafo-saldo">Saldo actual: <span class="importe">{{cliente.saldo}}<span class="importe">€</span></span></p>
+
+<button type="button" class="button-gestor">Contacta con el gestor</button> 
+</article>
+<section class="section-cambio-pass">
+    <label  for="new-pass">Cambiar Contraseña</label>
+    <br>
+    <input  placeholder="Ingrese una nueva contraseña" type="new-pass" id="new-pass" > 
+    <br>
+    <label  for="new-password">Confirme la contraseña</label>
+    <br>
+    <input  placeholder="Vuelva a introducir la contraseña" type="new-password" id="new-password" > 
+    <br>
+    <button class="boton-cambio-pass" type="submit">Confirmar nueva contraseña</button>
+</section>
+</div>
+
+<p class="parrafo-sin-login" *ngIf="!cliente">Inicie sesión para ver sus datos.</p>

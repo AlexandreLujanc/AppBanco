@@ -1,0 +1,6 @@
+<div class="detalle" *ngIf="transferencia">
+<p> Transferencia de {{transferencia.clienteOrdenante.usuario}}</p>
+<p> Transferencia para {{transferencia.clienteBeneficiario.usuario}}</p>
+<p> Importe total {{transferencia.importe | currency: "EUR"}}</p>
+<p> Fecha de la transferencia {{transferencia.fecha | date: "short"}}</p>
+</div>

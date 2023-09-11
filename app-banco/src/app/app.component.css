@@ -1,0 +1,51 @@
+.main-menu  ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.main-menu ul li a{
+    color: lightcoral;
+}
+
+.main-menu ul li a:hover{
+    color: white;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Agrega un color de fondo para el menú desplegable */
+    padding: 10px; /* Ajusta el espacio interno del menú desplegable según tus necesidades */
+    width: 250px;
+    
+  }
+  
+  .dropdown-menu:hover .submenu {
+    display: block;
+    background-color: black;
+  
+  }
+  
+  .dropdown-menu {
+    position: relative;
+  }
+  
+  .dropdown-menu::after {
+    content: '\25BC'; /* Código unicode para la flecha hacia abajo */
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Ajusta la posición lateral de la flecha según tus necesidades */
+    transform: translateY(-50%);
+  }
+  
+  /* Opcional: Estilos para mejorar la apariencia del menú principal */
+  .dropdown-menu > a {
+    display: inline-block;
+    padding-right: 10px; /* Agrega un espacio entre el texto y la flecha */
+  }
+
+.logo {
+    align-items: center;
+  }

@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    color: lightcoral;
+}
+
+body {
+    font-size: 18px;
+
+    font-family: Verdana, sans-serif;
+}
+
+main {
+    min-height: 600px;
+    padding-right: 18px;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+   
+}
+
+.logoo{
+    text-align: center;
+}
+
+.main-nav ul,
+.main-footer ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-footer ul {
+    justify-content: center;
+}
+
+.main-nav a,
+.main-footer a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.main-nav a:hover {
+    border-bottom: 3px solid var(--color-text);
+}
+
+.main-footer a {
+    font-size: small;
+}
+
+.sidebar {
+
+    grid-area: sidebar;
+    border-left: 2px solid #ccc;
+    padding: 18px;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+.heading {
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-image {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header1"
+            "nav"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        border-left: none;
+        padding: 0;
+    }
+
+    main {
+        min-height: auto;
+    }
+}
+
+.titulo-recibidas{
+    font-size: 20px;
+}
+
+
+.main-menu ul{
+    background-color:black;
+}
+
+.titulo{
+    text-align: center;
+    background-color: black;
+    font-size: 50px;
+}

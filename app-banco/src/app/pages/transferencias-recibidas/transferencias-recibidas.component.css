@@ -1,0 +1,42 @@
+.fila-tabla{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    
+}
+
+.fila-tabla > div{
+    width: 20%;
+    
+}
+
+.cabecera-tabla{
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: black;
+    
+}
+
+.solo-abajo {
+    font-weight: lighter;
+    font-size: 13px;
+    background-color: black;
+}
+
+.titulo-recibidas {
+    font-size: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.section-tabla{
+    background-color: black;
+}
+
+.divon{
+    background-color: black;
+    color: lightcoral;
+    text-align: center;
+    line-height: 200px;
+    margin-top: 162px;
+}

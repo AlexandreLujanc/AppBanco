@@ -1,0 +1,8 @@
+.transferencias-menu ul{
+    display: block !important;
+    gap: 15px;
+    line-height: 10;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+}

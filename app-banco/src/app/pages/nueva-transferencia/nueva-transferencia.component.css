@@ -1,0 +1,36 @@
+.section-nueva-transferencia{
+    text-align: center;
+    line-height: 2;
+    margin-top: 100px;
+    background-color: black;
+}
+
+.boton-enviar{
+  
+        color: black;
+        background-color: lightcoral;
+        border-style: solid white;
+        width: 200px;
+        height: 30px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+      
+}
+
+.spanish{
+    background-color: black;
+    color: lightcoral;
+    text-align: center;
+    line-height: 200px;
+    margin-top: 162px;
+    
+}
+
+.chill{
+    background-color: black;
+    color: lightcoral;
+    text-align: center;
+    line-height: 200px;
+    margin-top: 62px;
+    
+}

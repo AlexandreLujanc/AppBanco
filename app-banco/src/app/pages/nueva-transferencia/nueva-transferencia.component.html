@@ -1,0 +1,20 @@
+<div *ngIf="cliente" class="section-nueva-transferencia">
+    <label class="cuenta-destino" for="cuenta-destino">Cuenta de Destino</label>
+    <br>
+    <input [(ngModel)]="nuevaTransferencia.clienteBeneficiario.id" placeholder="Ingrese la cuenta a la que desea realizar la transferencia" type="number" id="cuenta-destino"> 
+    <br>
+    <label class="texto-concepto" for="concepto">Concepto</label>
+    <br>
+    <input [(ngModel)]="nuevaTransferencia.concepto" placeholder="Ingrese un concepto válido" type="text" id="concepto"> 
+    <br>
+    <label class="texto-importe" for="importe">Importe</label>
+    <br>
+    <input [(ngModel)]="nuevaTransferencia.importe" placeholder="Ingrese un importe" type="number" id="importe"> 
+    <br>
+    <button class="boton-enviar" (click)="enviarTransferencia()">Enviar Transferencia</button>
+    <section class="chill" >{{feedback}}</section>
+</div>
+
+  <section  *ngIf="!cliente" class="spanish">Para poder realizar una nueva transferencia debe iniciar sesión</section>
+  
+  

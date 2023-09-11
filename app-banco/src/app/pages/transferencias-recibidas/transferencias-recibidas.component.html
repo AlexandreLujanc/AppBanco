@@ -1,0 +1,5 @@
+<div *ngIf="cliente"><h1 class="titulo-recibidas">Mis transferencias recibidas</h1>
+
+<app-tabla-transferencias [transferencias]="transferencias"></app-tabla-transferencias></div>
+
+<section class="divon" *ngIf="!cliente">Para ver sus transferencias recibidas inicie la sesión</section>

@@ -1,0 +1,30 @@
+<h1 class="titulo">Bancomunista</h1>
+<article class="logoo">
+  <img src="assets/pngwing.com.png" class="logo" alt="Logo del banco">
+</article>
+<nav class="main-menu">
+  <ul>
+
+    <li>
+      <a class="inciar" *ngIf="!getSesionIniciada()"[routerLink]="'/auth/login'">
+        Iniciar Sesión
+      </a>
+      <a class="cerrar" *ngIf="getSesionIniciada()" (click)="cerrarSesion()">
+       Cerrar Sesion
+      </a>
+    </li>
+
+
+    <li><a routerLink="/pages/dashboard">Inicio</a></li>
+    <li class="dropdown-menu">Transferencias
+      <ul class="submenu">
+        <li><a routerLink="/pages/nueva-transferencia">Nueva Transferencia</a></li>
+        <li><a routerLink="/pages/transferencias-recibidas">Transferencias recibidas</a></li>
+        <li><a routerLink="/pages/transferencias-enviadas">Transferencias enviadas</a></li>
+      </ul>
+    </li>
+    <li><a routerLink="/pages/mi-perfil">Mi perfil</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

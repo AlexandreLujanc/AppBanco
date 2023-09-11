@@ -1,0 +1,10 @@
+<section><p *ngIf="cliente">Ususario: {{cliente.usuario}}</p>
+<br>
+<p *ngIf="cliente">Correo: {{cliente.correo}}</p>
+<br>
+<p *ngIf="cliente">Saldo: <span class="eurito" >{{cliente.saldo}}€</span></p>
+</section>
+
+<div class="parrafo-sin" *ngIf="!cliente">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Creese una cuenta aquí</a>
+</div>

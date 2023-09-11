@@ -1,0 +1,65 @@
+.div-prueba {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  .button-gestor{
+    justify-content:space-around
+  }
+  
+  .article-saldo {
+    border: 1px solid lightcoral; /* Estilo de borde y color para el <article> */
+    padding: 10px; /* Espacio interno para separar el contenido del borde */
+    background-color: black;
+    margin-top: 100px;
+    border-radius: 10%;
+  }
+  
+  .section-cambio-pass {
+    border: 1px solid lightcoral; /* Estilo de borde y color para el <section> */
+    padding: 10px; /* Espacio interno para separar el contenido del borde */
+    margin-left: 10px; /* Margen izquierdo para separar el <section> del <article> */
+    background-color: black; 
+    margin-left: 300px;
+    line-height: 2.5;
+    margin-top: 100px;
+    border-radius: 10%
+  }
+  
+  
+
+.parrafo-saldo{
+    line-height: 10;
+    
+}
+
+.importe{
+    color: rgb(13, 221, 13)
+}
+
+.boton-cambio-pass{
+  color: black;
+  background-color: lightcoral;
+  border-style: solid white;
+  width: 200px;
+  height: 30px;
+  font-weight: bolder;
+  margin-top: 35px;
+}
+
+.button-gestor{
+  color: black;
+  background-color: lightcoral;
+  border-style: solid white;
+  width: 200px;
+  height: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.parrafo-sin-login{
+  background-color: black;
+  color: lightcoral;
+  text-align: center;
+  line-height: 200px;
+  margin-top: 162px;
+}

@@ -1,0 +1,12 @@
+<section class="section-tabla">
+<div class="fila-tabla">
+    <div class="cabecera-tabla">Concepto</div>
+    <div class="cabecera-tabla">Importe</div>
+    <div class="cabecera-tabla">Fecha</div>
+</div>
+<article class="fila-tabla solo-abajo" *ngFor="let transferencia of transferencias">
+    <div><a [routerLink]="'/pages/detalle-transferencia/'+transferencia.id">{{ transferencia.concepto }}</a></div>
+    <div>{{ transferencia.importe | currency: "EUR" }}</div>
+    <div>{{ transferencia.fecha | date:"medium" }}</div>
+</article>
+</section>

@@ -1,0 +1,18 @@
+section {
+    text-align: center  ;
+    margin-top: 100px;
+    line-height: 2;
+    align-items: left;
+    background-color: black;
+}
+
+.eurito{
+    color: green;
+}
+
+.parrafo-sin{
+    background-color: black;
+    color: lightcoral;
+    text-align: center;
+    line-height: 200px;
+  }

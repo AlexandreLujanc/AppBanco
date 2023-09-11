@@ -1,0 +1,27 @@
+.fila-tabla{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.fila-tabla > div{
+    width: 20%;
+}
+
+.cabecera-tabla{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.solo-abajo {
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 3;
+}
+
+.section-tabla {
+    border: 1px solid black; /* Estilo de borde para la sección */
+    background-color: black; /* Color de fondo para la sección */
+    padding: 10px; /* Espacio interno para separar el contenido del borde */
+  }
+  
